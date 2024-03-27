@@ -60,7 +60,7 @@ jobs:
           git config --global user.email "indikak2005@gmail.com"
           git config --global user.name "indikak2005"
           echo ${{github.sha}}         
-          sed -i 's/indikak2005\/rs_policy_service:[0-9a-zA-Z]\+/indikak2005\/rs_policy_service:${{github.sha}}/g' deployment.yaml
+          sed -i 's/indikak2005\/rs_policy_service:[0-9a-zA-Z]\+/indikak2005\/rs_policy_service:${{github.sha}}/g' deployment.yml
           cat deployment.yml 
           git add .
           git commit -am "update image with tage : ${{github.sha}}"
