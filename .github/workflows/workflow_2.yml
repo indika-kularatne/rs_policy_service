@@ -61,7 +61,7 @@ jobs:
           git config --global user.name "indikak2005"
           echo ${{github.sha}}
           cat deployment.yml
-          sed -i "s/indikak2005/rs_policy_service.*/$indikak2005/rs_policy_service:${{github.sha}}/g" deployment.yml 
+          sed -i "s/indikak2005/rs_policy_service.*/indikak2005/rs_policy_service:${{github.sha}}/g" deployment.yml 
           git add .
           git commit -am "update image with tage : ${{github.sha}}"
       - run: git push origin main 
