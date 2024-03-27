@@ -69,7 +69,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.WORKFLOW_ACCESS_TOKEN }}
         run: |
-          git push https://indikak2005:$${{ secrets.WORKFLOW_ACCESS_TOKEN }}@github.com/indikak2005/rs_policy_service_infra.git main
+          git push https://indikak2005:$${{ secrets.WORKFLOW_ACCESS_TOKEN }}@github.com/TuneDemo/rs_policy_service_infra.git main
 
 
       
