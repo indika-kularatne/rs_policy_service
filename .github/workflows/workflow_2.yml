@@ -59,9 +59,9 @@ jobs:
         run: |
           git config --global user.email "indikak2005@gmail.com"
           git config --global user.name "indikak2005"
-          echo ${{github.sha}}
-          cat deployment.yml          
-          sed -i 's/\(rs_policy_service:.*:\)[0-9]\+/rs_policy_service: ${{github.sha}}/' deployment.yml
+          echo ${{github.sha}}         
+          sed -i 's/\(rs_policy_service:.*:\)[0-9]\+/rs_policy_service:${{github.sha}}/' deployment.yml
+          cat deployment.yml 
           git add .
           git commit -am "update image with tage : ${{github.sha}}"
       - run: git push origin main 
