@@ -62,7 +62,7 @@ jobs:
           echo ${{github.sha}}         
           pwd
           ls
-          sed -i 's/indikak2005\/rs_policy_service:[0-9a-zA-Z]\+/indikak2005\/rs_policy_service:${{github.sha}}/g'  dev/deployment.yml
+          sed -i 's/indikak2005\/policy-service:[0-9a-zA-Z]\+/indikak2005\/policy-service:${{github.sha}}/g'  dev/deployment.yml
           cat dev/deployment.yml 
           git add .
           git commit -am "update image with tage : ${{github.sha}}"
