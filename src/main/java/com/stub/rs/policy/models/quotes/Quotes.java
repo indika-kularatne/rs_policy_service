@@ -27,5 +27,5 @@ public class Quotes {
 	private String currencyCode;
 	private String promoCode;
 	private String affinityCode;
-	
+	private String userCode;
 }
