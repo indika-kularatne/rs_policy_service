@@ -65,6 +65,7 @@ public class QuoteServiceController {
 				.build();		
 	}
 
+	/**
 
 	    @PostMapping(path = "/readfile")
 	    public String readFile(@RequestParam String fileName) {
@@ -78,6 +79,6 @@ public class QuoteServiceController {
 	        }
 	        return "File content: " + content.toString();
 	    }
-	
+	**/
 
 }
