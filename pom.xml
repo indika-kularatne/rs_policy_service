@@ -13,9 +13,14 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>rs_policy_service_actions</name>
 	<description>RS Cored Stub Service</description>
+	
 	<properties>
 		<java.version>17</java.version>
+		  <sonar.organization>indika-kularatne</sonar.organization>
+  		  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	</properties>
+
+	
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
