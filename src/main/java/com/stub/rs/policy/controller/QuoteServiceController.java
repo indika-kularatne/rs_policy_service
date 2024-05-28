@@ -19,6 +19,14 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 
+import java.util.*;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+
 @RestController
 @RequestMapping(path = "/api/v2/quotes")
 @Tag(name = "Quote Service Endpoints", description = "The list of endpoints defines in the Quote Service Controller") 
@@ -56,6 +64,20 @@ public class QuoteServiceController {
 				.policyEnd(LocalDate.now())
 				.build();		
 	}
+
+
+	    @PostMapping(path = "/readfile")
+	    public String readFile(@RequestParam String fileName) {
+	
+	        StringBuilder content = new StringBuilder();
+	        try {
+	            Files.lines(Paths.get(fileName))
+	                 .forEach(line -> content.append(line).append("\n"));
+	        } catch (IOException e) {
+	            return "Error reading file: " + e.getMessage();
+	        }
+	        return "File content: " + content.toString();
+	    }
 	
 
 }
