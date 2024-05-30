@@ -52,7 +52,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: mvn clean verify sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=indika-kularatne -Dsonar.projectKey=indika-kularatne_rs_policy_service  
+        run: mvn clean verify sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=indika-kularatne -Dsonar.projectKey=indika-kularatne_rs_policy_service -Dsonar.qualitygate.wait=true 
 
         #run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=indika-kularatne_rs_policy_service -Dsonar.login=0f187069eddb7b5f72593d7fdf48dcb30dc16b1d
         
