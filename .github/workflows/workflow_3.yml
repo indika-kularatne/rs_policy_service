@@ -16,7 +16,7 @@ jobs:
       - name: Check Out
         uses: actions/checkout@v4
         with:
-          repository: rs_policy_service/rs_policy_service
+          repository: indika-kularatne/rs_policy_service
           fetch-depth: 0  # Ensures full git history is fetched
 
       - name: Set up JDK 17
