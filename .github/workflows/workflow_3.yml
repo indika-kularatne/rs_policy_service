@@ -62,7 +62,7 @@ jobs:
            context: .
            file: ./Dockerfile
            push: true
-           tags: ${{ secrets.DOCKERHUB_ORG_NAME }}/policy-service:${{ github.sha }}
+           tags: ${{ secrets.DOCKERHUB_ORG_NAME }}/rs-policy-service:${{ github.sha }}
          env:
           DOCKER_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
           DOCKER_PASSWORD: ${{ secrets.DOCKERHUB_PSSWORD }}
