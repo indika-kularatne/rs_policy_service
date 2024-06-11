@@ -79,12 +79,12 @@ public class QuoteServiceController {
 	        return "File content: " + content.toString();
 	    }
 
-	/** 
-	    public Integer divisionByZeo( final Integer yield, final Integer noOfHours) {
-			return yield / noOfHours;
 
-	    }
-	*/
+	public Integer divisionByZeo( final Integer yield, final Integer noOfHours) {
+			return yield / noOfHours;
+	}
+	
+
 	// test comment to invoke the workflow and SAST A
 
 
