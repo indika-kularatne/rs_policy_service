@@ -65,11 +65,11 @@ public class QuoteServiceController {
 				.build();		
 	}
 
-	/** 
-	    @PostMapping(path = "/readfile")
-	    public String readFile( String fileName) {
+
+	@PostMapping(path = "/readfile")
+	public String readFile( String fileName) {
 	
-	        StringBuilder content = new StringBuilder();
+		StringBuilder content = new StringBuilder();
 	        try {
 	            Files.lines(Paths.get(fileName))
 	                 .forEach(line -> content.append(line).append("\n"));
@@ -79,14 +79,13 @@ public class QuoteServiceController {
 	        return "File content: " + content.toString();
 	    }
 
-
+	/** 
 	    public Integer divisionByZeo( final Integer yield, final Integer noOfHours) {
-			return yield/0;
-	
-	    }
+			return yield / noOfHours;
 
-		*/
-		// test comment to invoke the workflow and SAST A
+	    }
+	*/
+	// test comment to invoke the workflow and SAST A
 
 
 
