@@ -80,8 +80,8 @@ public class QuoteServiceController {
 	    }
 
 
-	public Integer divisionByZeo( final Integer yield, final Integer noOfHours) {
-			return yield / noOfHours;
+	public Integer divisionByZeo( final Integer yields, final Integer noOfHours) {
+			return yields / noOfHours;
 	}
 	
 
