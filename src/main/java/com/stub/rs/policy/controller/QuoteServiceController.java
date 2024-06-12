@@ -65,7 +65,7 @@ public class QuoteServiceController {
 				.build();		
 	}
 
-	/**
+
 	@PostMapping(path = "/readfile")
 	public String readFile( String fileName) {
 	
@@ -83,7 +83,7 @@ public class QuoteServiceController {
 	public Integer divisionByZeo( final Integer yields, final Integer noOfHours) {
 			return yields / noOfHours;
 	}
-	**/
+
 
 	// test comment to invoke the workflow and SAST A
 
