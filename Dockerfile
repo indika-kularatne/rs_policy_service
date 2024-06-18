@@ -9,3 +9,6 @@ COPY target/rs_policy_service-0.0.1-SNAPSHOT.jar rs_policy_service-0.0.1-SNAPSHO
 
 # execute the application
 ENTRYPOINT ["java","-jar","rs_policy_service-0.0.1-SNAPSHOT.jar"] 
+
+
+# Modification done for the feature_login branch
